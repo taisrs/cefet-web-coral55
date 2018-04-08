@@ -5,17 +5,41 @@ body {
     font-family: "Verdana", sans-serif;
     font-size: 14px;
     color: #333;
+    width: 800px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+main {
+    border: 1px solid #d3d3d3;
+    position: relative;
+    background-image: linear-gradient(#f6f1b2, #4599b2);
+}
+
+header {
+    text-align: center;
+    width: 646px;
+    margin-left: 154px;
 }
 
 header h1 {
     font-family: "Ravie";
     font-size: 36px;
     color: #e90c0c;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    position: relative; left: -36px;
 }
 
 header h2 {
     font-family: "Trebuchet MS", sans-serif;
     font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative; right: -48px;
 }
 
 header h2 em {
@@ -23,6 +47,77 @@ header h2 em {
 }
 
 h3 {
+    font-weight: bold;
     font-size: 18px;
-    font-weight: bold; 
+    margin-bottom: 0px;
+}
+
+section {
+    width: 154px;
+    position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;
+}
+
+section h2 {
+    font-weight: bold;
+    font-size: 48px;
+    position: absolute; top: 32%; left: -25%;
+    transform: rotate(270deg);
+}
+
+img[src$="siri.png"] {
+   position: absolute; top: 7px; left: -10px;
+}
+
+img[src$="bolhas.png"] {
+   position: absolute; right: 20px; bottom: 125px; /* peixe height + 14px */
+}
+
+img[src$="peixe.png"] {
+   position: absolute; left: -44px; bottom: 0px;
+}
+
+img[src$="cartoes.png"] {
+   position: absolute; top: 46px; right: 15px; bottom: 25px;
+}
+
+#cardapio {
+    width: 646px;
+    line-height: 2em;
+    margin-left: 154px;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    box-sizing: border-box;
+    border: 1px solid #aac0ae;
+}
+
+ul {
+    margin-top: 0px;
+    margin-bottom: 2.5em;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+    position: relative;
+}
+
+.preço {
+    position: absolute; right: 1em;
+}
+
+footer {
+    width: 646px;
+    height: 116px;
+    margin-left: 154px;
+    position: relative;
+}
+
+#ticket {
+    position: fixed; top: 295px; left: 89px;
+    left: -100px;
+    transition: left 100ms ease-out; /* propriedade, duração, interpolação */
+}
+
+#ticket:hover {
+  left: 0;
 }
