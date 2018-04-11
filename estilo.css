@@ -47,6 +47,10 @@ header h2 {
     position: relative; right: -48px;
 }
 
+header h1, h2 {
+    font-weight: normal;
+}
+
 header h2 em {
     color: #d027aa;
     font-style: normal;
@@ -91,6 +95,7 @@ img[src$="cartoes.png"] {
     padding-left: 1em;
     padding-bottom: 1em;
     border: 1px solid #aac0ae;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 ul {
@@ -114,8 +119,7 @@ footer {
 }
 
 #ticket {
-    position: fixed; top: 295px; left: 89px;
-    left: -100px;
+    position: fixed; top: 295px; left: -69px; /* - ticket width + 89px */
     transition: left 100ms ease-out; /* propriedade, duração, interpolação */
 }
 
